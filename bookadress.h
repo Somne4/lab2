@@ -15,6 +15,12 @@ public:
     Bookadress(QWidget *parent = nullptr);
     ~Bookadress();
 
+public slots:
+    void save();
+
+private slots:
+    void markUnsavedChanges();
+
 private:
     Ui::Bookadress *ui;
 };
